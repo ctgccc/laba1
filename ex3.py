@@ -8,20 +8,6 @@ for i in range(n):
        s += a[i]
 print("1)Сумма элементов списка:", s)
 
-''''
-sum_after_zero = 0
-zero_encountered = False
-for i in range(n):
-   if a[i] == 0:
-       zero_encountered = True
-   elif zero_encountered:
-       sum_after_zero += a[i]
-       if zero_encountered:
-           print("Сумма элементов после первого нуля:", sum_after_zero)
-       else:
-           print("Сумму посчитать нельзя")
-'''''
-
 if 0 in a:
     print("2)Сумма элементов после первого нуля:",sum(a[a.index(0):]))
 else:
